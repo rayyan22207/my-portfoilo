@@ -1,10 +1,10 @@
-// Adding interactivity to the home page
+// Adding interactivity to the project cards
 document.addEventListener("DOMContentLoaded", () => {
     const projects = document.querySelectorAll(".project");
 
     projects.forEach(project => {
         project.addEventListener("click", () => {
-            alert(`You clicked on ${project.querySelector("h3").textContent}`);
+            alert(`More details about ${project.querySelector("h3").textContent} coming soon!`);
         });
     });
 });

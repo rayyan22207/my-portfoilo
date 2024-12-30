@@ -10,6 +10,9 @@ body {
 header {
     background-color: #282c34;
     padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav ul {
@@ -43,9 +46,9 @@ main {
 .project {
     border: 1px solid #ddd;
     padding: 1em;
-    margin: 1em 0;
-    display: inline-block;
-    width: calc(45% - 2em);
+    margin: 1em auto;
+    width: calc(90% - 2em);
+    max-width: 600px;
 }
 
 .project img {
@@ -58,4 +61,13 @@ footer {
     color: #fff;
     padding: 1em;
     text-align: center;
+}
+
+footer a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
